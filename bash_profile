@@ -6,3 +6,6 @@ alias myts=get_ts
 
 function find_and_commit () { svn ci `svn st $@ | egrep '^(M|D|A)' | awk '{print \$NF}' | xargs`; }
 alias ci=find_and_commit
+
+alias vim='vim -p'
+alias vimt='vim -O'
